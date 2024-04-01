@@ -21,3 +21,32 @@
     margin-right: 600px;
     border-radius: 4px;
 }
+.plbtn{
+    
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        background-color: #cbf560;
+        width: 100%;
+        font-family: cursive;
+        color: white;
+        font-size: large;
+        font-weight: 900;
+        cursor:pointer;
+        transition: background-color 0.3s ease;
+}
+.plbtn:hover {
+    background-color: #c2e2c8;
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(1.0);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  .bounce {
+    animation: bounce 0.5s;
+  }

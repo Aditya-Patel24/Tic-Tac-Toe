@@ -26,7 +26,7 @@ function Border() {
   };
   const isWinner = checkWinner();
   const handleClick = (i) => {
-    if (state[i] !== null) return;
+    if (isWinner || state[i] !== null) return;
     const copyState = [...state];
     copyState[i] = xIsTurn ? "X" : "O";
     setState(copyState);
@@ -38,6 +38,7 @@ function Border() {
   const handleReset = () => {
     setState(Array(9).fill(null));
     setXIsTurn(true);
+    setIsDraw(false);
   };
   return (
     <>
@@ -86,25 +87,57 @@ function Border() {
             >
               {isWinner} won the game
               <br></br>
-              <button
-                onClick={handleReset}
-                style={{
-                  border: "none",
-                  padding: "10px",
-                  borderRadius: "4px",
-                  backgroundColor: "#cbf560",
-                  width: "100%",
-                  fontFamily: "cursive",
-                  color: "white",
-                  fontSize: "large",
-                  fontWeight: "900",
-                }}
-              >
-                Play Again
-              </button>
+              <button className="plbtn" onClick={handleReset}>Play Again</button>
             </div>
           </>
-        ) : (
+        ) :isDraw ? ( <>
+          <h2
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: " #CEF0D4",
+              fontFamily: "'Rouge Script', cursive",
+              fontSize: "50px",
+              fontWeight: " normal",
+              textShadow: "1px 1px 2px #082b34",
+            }}
+          >
+            Player {xIsTurn ? "X" : "O"} turn
+          </h2>
+
+          <div className="row">
+            <Box onClick={() => handleClick(0)} value={state[0]} />
+            <Box onClick={() => handleClick(1)} value={state[1]} />
+            <Box onClick={() => handleClick(2)} value={state[2]} />
+          </div>
+          <div className="row">
+            <Box onClick={() => handleClick(3)} value={state[3]} />
+            <Box onClick={() => handleClick(4)} value={state[4]} />
+            <Box onClick={() => handleClick(5)} value={state[5]} />
+          </div>
+          <div className="row">
+            <Box onClick={() => handleClick(6)} value={state[6]} />
+            <Box onClick={() => handleClick(7)} value={state[7]} />
+            <Box onClick={() => handleClick(8)} value={state[8]} />
+          </div>
+
+          <div
+            style={{
+              color: " #CEF0D4",
+              fontFamily: "'Rouge Script', cursive",
+              fontSize: "40px",
+              fontWeight: " normal",
+              textShadow: "1px 1px 2px #082b34",
+            }}
+          >
+            This is Draw
+            <br></br>
+            <button className="plbtn" onClick={handleReset}>
+              Play Again
+            </button>
+          </div>
+        </>): (
           <>
             <h2
               style={{
