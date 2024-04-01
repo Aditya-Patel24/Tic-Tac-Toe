@@ -15,6 +15,11 @@
 .box:hover{
     background-color: #cbf560;
 }
+.border-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .border{
     margin: 20px;
     /* margin-left: 600px;

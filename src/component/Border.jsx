@@ -41,7 +41,7 @@ function Border() {
     setIsDraw(false);
   };
   return (
-    <>
+    <div className="border-container">
       <div className="border">
         {isWinner ? (
           <>
@@ -171,7 +171,7 @@ function Border() {
           </>
         )}
       </div>
-    </>
+    </div>
   );
 }
 export default Border;
