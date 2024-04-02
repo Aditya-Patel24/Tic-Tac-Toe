@@ -82,15 +82,15 @@ function Border() {
                 fontFamily: "'Rouge Script', cursive",
                 fontSize: "40px",
                 fontWeight: " normal",
-                textShadow: "1px 1px 2px #082b34",
+                textShadow: "1px 1px 2px #082b34",display:"flex",alignItems:"center",justifyContent:"center"
               }}
             >
               {isWinner} won the game
               <br></br>
-              <span><img src="public\party.gif" style={{position:"absolute",marginTop:"-99px",marginLeft:"-82px", WebkitTransform: "scaleX(-1)", transform: "scaleX(-1)"}}alt="" /></span>
-              <span><img src="public\party.gif" style={{position:"absolute",marginTop:"-99px",marginLeft:"242px"}}alt="" /></span>
+              {/* <span><img src="public\party.gif" style={{position:"absolute",marginTop:"-99px",marginLeft:"-82px", WebkitTransform: "scaleX(-1)", transform: "scaleX(-1)"}}alt="" /></span>
+              <span><img src="public\party.gif" style={{position:"absolute",marginTop:"-99px",marginLeft:"242px"}}alt="" /></span> */}
             </div>
-              <button className="plbtn" onClick={handleReset}>Play Again</button>
+              <button className="plbtn" style={{ marginTop:"10px"}} onClick={handleReset}>Play Again</button>
           </>
         ) :isDraw ? ( <>
           <h2
@@ -130,15 +130,12 @@ function Border() {
               fontFamily: "'Rouge Script', cursive",
               fontSize: "40px",
               fontWeight: " normal",
-              textShadow: "1px 1px 2px #082b34",
+              textShadow: "1px 1px 2px #082b34",display:"flex",alignItems:"center",justifyContent:"center"
             }}
           >
             This is Draw
-            <br></br>
-            <button className="plbtn" onClick={handleReset}>
-              Play Again
-            </button>
           </div>
+            <button className="plbtn" style={{ marginTop:"10px"}} onClick={handleReset}>Play Again</button>
         </>): (
           <>
             <h2
