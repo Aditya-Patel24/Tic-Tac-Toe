@@ -87,8 +87,8 @@ function Border() {
             >
               {isWinner} won the game
               <br></br>
-              {/* <span><img src="public\party.gif" style={{position:"absolute",marginTop:"-99px",marginLeft:"-82px", WebkitTransform: "scaleX(-1)", transform: "scaleX(-1)"}}alt="" /></span>
-              <span><img src="public\party.gif" style={{position:"absolute",marginTop:"-99px",marginLeft:"242px"}}alt="" /></span> */}
+              <span><img src="public\party.gif" style={{position:"absolute",marginTop:"-99px",marginLeft:"-388px", WebkitTransform: "scaleX(-1)", transform: "scaleX(-1)"}}alt="" /></span>
+              <span><img src="public\party.gif" style={{position:"absolute",marginTop:"-99px",marginLeft:"-53px"}}alt="" /></span>
             </div>
               <button className="plbtn" style={{ marginTop:"10px"}} onClick={handleReset}>Play Again</button>
           </>
