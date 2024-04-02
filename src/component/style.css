@@ -22,11 +22,11 @@
     align-items: center;
 }
 .border{
-    margin: 20px;
+    /* margin: 20px; */
     /* margin-left: 600px;
     margin-right: 600px; */
     border-radius: 4px;
-    width: 100%;
+    min-width: 320px;
 }
 .plbtn{
     
