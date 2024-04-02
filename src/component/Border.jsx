@@ -41,7 +41,7 @@ function Border() {
     setIsDraw(false);
   };
   return (
-    <>
+    <div className="border-container">
       <div className="border">
         {isWinner ? (
           <>
@@ -87,8 +87,10 @@ function Border() {
             >
               {isWinner} won the game
               <br></br>
-              <button className="plbtn" onClick={handleReset}>Play Again</button>
+              <span><img src="src\assets\party.gif" style={{position:"absolute",marginTop:"-99px",marginLeft:"-82px", WebkitTransform: "scaleX(-1)", transform: "scaleX(-1)"}}alt="" /></span>
+              <span><img src="src\assets\party.gif" style={{position:"absolute",marginTop:"-99px",marginLeft:"242px"}}alt="" /></span>
             </div>
+              <button className="plbtn" onClick={handleReset}>Play Again</button>
           </>
         ) :isDraw ? ( <>
           <h2
@@ -171,7 +173,7 @@ function Border() {
           </>
         )}
       </div>
-    </>
+    </div>
   );
 }
 export default Border;

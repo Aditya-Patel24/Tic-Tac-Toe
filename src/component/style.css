@@ -15,11 +15,17 @@
 .box:hover{
     background-color: #cbf560;
 }
+.border-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .border{
     margin: 20px;
-    margin-left: 600px;
-    margin-right: 600px;
+    /* margin-left: 600px;
+    margin-right: 600px; */
     border-radius: 4px;
+    max-width: 400px;
 }
 .plbtn{
     
