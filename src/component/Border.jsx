@@ -87,8 +87,8 @@ function Border() {
             >
               {isWinner} won the game
               <br></br>
-              <span><img src="/Tic-Tac-Toe/party.gif" style={{position:"absolute",marginTop:"-99px",marginLeft:"-388px", WebkitTransform: "scaleX(-1)", transform: "scaleX(-1)"}}alt="" /></span>
-              <span><img src="public\party.gif" style={{position:"absolute",marginTop:"-99px",marginLeft:"-53px"}}alt="" /></span>
+              <span><img src="/Tic-Tac-Toe/party.gif" style={{width:"200px",position:"absolute",marginTop:"-147px",marginLeft:"-388px", WebkitTransform: "scaleX(-1)", transform: "scaleX(-1)"}}alt="" /></span>
+              <span><img src="/Tic-Tac-Toe/party.gif" style={{width:"200px",position:"absolute",marginTop:"-147px",marginLeft:"-104px"}}alt="" /></span>
             </div>
               <button className="plbtn" style={{ marginTop:"10px"}} onClick={handleReset}>Play Again</button>
           </>
