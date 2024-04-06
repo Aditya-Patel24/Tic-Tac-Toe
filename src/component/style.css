@@ -57,7 +57,7 @@
     animation: bounce 0.5s;
   }
   .plbtn:active {
-    background-color: #a8dadc;
+    background-color: #a3d6d8;
     transform: scale(0.95);
   }
   .box:active {
