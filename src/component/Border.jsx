@@ -26,6 +26,8 @@ function Border() {
   };
   const isWinner = checkWinner();
   const handleClick = (i) => {
+    const audio = new Audio('src/assets/touch1.mp3');
+    audio.play();
     if (isWinner || state[i] !== null) return;
     const copyState = [...state];
     copyState[i] = xIsTurn ? "X" : "O";
@@ -87,8 +89,8 @@ function Border() {
             >
               {isWinner} won the game
               <br></br>
-              {/* <span><img src="public\party.gif" style={{position:"absolute",marginTop:"-99px",marginLeft:"-82px", WebkitTransform: "scaleX(-1)", transform: "scaleX(-1)"}}alt="" /></span>
-              <span><img src="public\party.gif" style={{position:"absolute",marginTop:"-99px",marginLeft:"242px"}}alt="" /></span> */}
+              <span><img src="/Tic-Tac-Toe/party.gif" style={{width:"200px",position:"absolute",marginTop:"-147px",marginLeft:"-388px", WebkitTransform: "scaleX(-1)", transform: "scaleX(-1)"}}alt="" /></span>
+              <span><img src="/Tic-Tac-Toe/party.gif" style={{width:"200px",position:"absolute",marginTop:"-147px",marginLeft:"-104px"}}alt="" /></span>
             </div>
               <button className="plbtn" style={{ marginTop:"10px"}} onClick={handleReset}>Play Again</button>
           </>

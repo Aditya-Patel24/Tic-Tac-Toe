@@ -5,9 +5,9 @@ import Box from './component/Box'
 import Border from './component/Border'
 function App() {
   return (
-    <>
+    <div className='app-container'>
       <Border/>
-    </>
+    </div>
   )
 }
 
