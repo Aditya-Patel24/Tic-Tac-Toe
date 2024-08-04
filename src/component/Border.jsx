@@ -26,7 +26,7 @@ function Border() {
   };
   const isWinner = checkWinner();
   const handleClick = (i) => {
-    const audio = new Audio('src/assets/touch1.mp3');
+    const audio = new Audio('/Tic-Tac-Toe/touch1.mp3');
     audio.play();
     if (isWinner || state[i] !== null) return;
     const copyState = [...state];
